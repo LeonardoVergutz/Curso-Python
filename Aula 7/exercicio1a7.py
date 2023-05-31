@@ -7,16 +7,15 @@ Teste 2: Entrada: 111, 15;  112, 20;  113, 10;  Saída: Maior empresa: 112, qtd 
 
 listafuncionarios = []
 listacnpj = []
-maior = 0
-menor = 0
+maiorcnpj = 0
+maiorqtd_funcionarios = 0
+indicemaior = 0
 i = 0
 
 while True:
-    cnpj = listacnpj.append(int(input("Digite o CNPJ da empresa:")))
-    if cnpj == -1:
-        break
-        False
-
+    cnpj = int(input("Digite o CNPJ da empresa:"))
+    if cnpj == -1: break
+    listacnpj.append(cnpj)
     funcionarios = listafuncionarios.append(int(input("Digite a quantidade de funcionarios da empresa:")))
     if listafuncionarios:
         indicemaior = listafuncionarios.index(max(listafuncionarios))
